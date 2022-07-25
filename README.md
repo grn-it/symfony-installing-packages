@@ -7,13 +7,13 @@ In Symfony, packages are called bundles and are installed via Composer.
 
 In order for bundle to work, it needs to be attached to framework. This usually requires doing some extra work - adding a bundle class in `config/bundles.php` and adding a config file in `config/packages/*.yaml` and possibly some others.  
 
-In order for bundle to automatically attach after installation, plugin for Composer called Flex was created.
+In order for bundle to automatically attach after installation, plugin for Composer called Flex was created.  
 Flex after installing bundle executes recipes, that is instructions for automating attachment and configuration of bundle in Symfony.  
 Executed recipes are written to `symfony.lock` file.  
 
-There are two recipe repositories - [main](https://github.com/symfony/recipes) and [contributor](https://github.com/symfony/recipes-contrib).  
-The main repository contains quality recipes for popular bundles.  
-The contributor repository contains recipes for the rest of bundles developed by community.  
+There are two recipe repositories: [main](https://github.com/symfony/recipes) and [contributor](https://github.com/symfony/recipes-contrib).  
+Main repository contains quality recipes for popular bundles.  
+Contributor repository contains recipes for the rest of bundles developed by community.  
 
 ### Bundle installation example using Flex
 For example, you need to install logger (Monolog Bundle by default)
