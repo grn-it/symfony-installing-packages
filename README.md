@@ -34,7 +34,6 @@ return [
 
 - Added configuration file `config/packages/monolog.yaml`;
 ```yaml
-#...
 when@dev:
     monolog:
         handlers:
@@ -55,7 +54,6 @@ when@dev:
                 type: console
                 process_psr_3_messages: false
                 channels: ["!event", "!doctrine", "!console"]
-#...
 ```
 
 - Added executed recipe to `symfony.lock`;
