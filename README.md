@@ -71,3 +71,22 @@ when@dev:
         ]
     },
 ```
+
+## Packs
+Pack is a Composer package that contains a set of dependencies (packages).  
+Pack is used to install all packages at once with one command, rather than individually for each package.  
+Once installed, `composer.json` will list the full set of packages, not the pack itself.  
+
+For example, let's install debug pack:  
+```bash
+composer require --dev debug
+```
+
+As a result, these bundles will be written in `composer.json`:  
+```json
+"require-dev": {
+    "symfony/debug-bundle": "6.1.*",
+    "symfony/stopwatch": "6.1.*",
+    "symfony/web-profiler-bundle": "6.1.*"
+}
+```
